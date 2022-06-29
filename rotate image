@@ -1,0 +1,14 @@
+void rotate(vector<vector<int>>& matrix) {
+        int n=matrix.size();
+        int i=0,j=n-1;
+        for(int k=0;k<n;k++){
+            for(int l=0;l<=k;l++){
+            
+            swap(matrix[k][l],matrix[l][k]);
+        }
+        }
+        for(int i=0;i<n;i++){
+            reverse(matrix[i].begin(),matrix[i].end());
+        }
+        
+    }
